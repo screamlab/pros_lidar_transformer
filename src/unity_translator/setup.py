@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "lidar_tranlator_node = unity_tranlator.lidar_tranlator:main",
+            "lidar_tranlator_node = unity_translator.lidar_translator:main",
         ],
     },
 )

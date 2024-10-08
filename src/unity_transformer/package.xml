@@ -3,7 +3,7 @@
 <package format="3">
   <name>unity_transformer</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
+  <description>This is a simple ROS2 node that republishes Lidar scan messages with an updated timestamp. It listens to Lidar scan messages on the `/scan_tmp` topic, updates the timestamp of the message, and republishes it to the `/scan` topic.</description>
   <maintainer email="alianlbj23@gmail.com">user</maintainer>
   <license>TODO: License declaration</license>
 

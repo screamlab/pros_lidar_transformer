@@ -1,6 +1,6 @@
 from setuptools import find_packages, setup
 
-package_name = 'unity_translator'
+package_name = 'unity_transformer'
 
 setup(
     name=package_name,
@@ -20,7 +20,7 @@ setup(
     tests_require=['pytest'],
     entry_points={
         'console_scripts': [
-            "lidar_tranlator_node = unity_translator.lidar_translator:main",
+            "lidar_tranformer_node = unity_transformer.lidar_transformer_node:main",
         ],
     },
 )

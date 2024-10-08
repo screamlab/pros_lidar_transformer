@@ -1,0 +1,28 @@
+[0.615s] Invoking command in '/home/user/workspace/lidar_translator/src/unity_translator': PYTHONPATH=/home/user/workspace/lidar_translator/build/unity_translator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/workspace/lidar_translator/install/unity_translator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/unity_translator build --build-base /home/user/workspace/lidar_translator/build/unity_translator/build install --record /home/user/workspace/lidar_translator/build/unity_translator/install.log --single-version-externally-managed install_data
+[0.798s] running egg_info
+[0.809s] writing ../../build/unity_translator/unity_translator.egg-info/PKG-INFO
+[0.810s] writing dependency_links to ../../build/unity_translator/unity_translator.egg-info/dependency_links.txt
+[0.810s] writing entry points to ../../build/unity_translator/unity_translator.egg-info/entry_points.txt
+[0.810s] writing requirements to ../../build/unity_translator/unity_translator.egg-info/requires.txt
+[0.810s] writing top-level names to ../../build/unity_translator/unity_translator.egg-info/top_level.txt
+[0.856s] [2;36m[10/08/24 14:10:23][0m[2;36m [0m[1;31mERROR   [0m listing git files failed - pretending there aren't any                            ]8;id=236336;file:///home/user/.local/lib/python3.10/site-packages/setuptools_scm/_file_finders/git.py\[2mgit.py[0m]8;;\[2m:[0m]8;id=86740;file:///home/user/.local/lib/python3.10/site-packages/setuptools_scm/_file_finders/git.py#26\[2m26[0m]8;;\
+[0.928s] reading manifest file '../../build/unity_translator/unity_translator.egg-info/SOURCES.txt'
+[0.929s] writing manifest file '../../build/unity_translator/unity_translator.egg-info/SOURCES.txt'
+[0.929s] running build
+[0.929s] running build_py
+[0.929s] copying unity_translator/__init__.py -> /home/user/workspace/lidar_translator/build/unity_translator/build/lib/unity_translator
+[0.929s] copying unity_translator/lidar_translator.py -> /home/user/workspace/lidar_translator/build/unity_translator/build/lib/unity_translator
+[0.929s] running install
+[0.932s] running install_lib
+[0.946s] copying /home/user/workspace/lidar_translator/build/unity_translator/build/lib/unity_translator/lidar_translator.py -> /home/user/workspace/lidar_translator/install/unity_translator/lib/python3.10/site-packages/unity_translator
+[0.947s] byte-compiling /home/user/workspace/lidar_translator/install/unity_translator/lib/python3.10/site-packages/unity_translator/lidar_translator.py to lidar_translator.cpython-310.pyc
+[0.947s] running install_data
+[0.947s] copying resource/unity_translator -> /home/user/workspace/lidar_translator/install/unity_translator/share/ament_index/resource_index/packages
+[0.948s] copying package.xml -> /home/user/workspace/lidar_translator/install/unity_translator/share/unity_translator
+[0.948s] running install_egg_info
+[0.961s] removing '/home/user/workspace/lidar_translator/install/unity_translator/lib/python3.10/site-packages/unity_translator-0.0.0-py3.10.egg-info' (and everything under it)
+[0.962s] Copying ../../build/unity_translator/unity_translator.egg-info to /home/user/workspace/lidar_translator/install/unity_translator/lib/python3.10/site-packages/unity_translator-0.0.0-py3.10.egg-info
+[0.962s] running install_scripts
+[1.096s] Installing lidar_tranlator_node script to /home/user/workspace/lidar_translator/install/unity_translator/lib/unity_translator
+[1.096s] writing list of installed files to '/home/user/workspace/lidar_translator/build/unity_translator/install.log'
+[1.125s] Invoked command in '/home/user/workspace/lidar_translator/src/unity_translator' returned '0': PYTHONPATH=/home/user/workspace/lidar_translator/build/unity_translator/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/user/workspace/lidar_translator/install/unity_translator/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base ../../build/unity_translator build --build-base /home/user/workspace/lidar_translator/build/unity_translator/build install --record /home/user/workspace/lidar_translator/build/unity_translator/install.log --single-version-externally-managed install_data

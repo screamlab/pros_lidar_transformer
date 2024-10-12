@@ -31,6 +31,18 @@ jobs:
         with:
           submodules: recursive
       
+      # This is going to set CPU thread into the environment variable
+      # Check if THREADS is a valid integer, otherwise set to 4
+      - name: Set THREADS environment variable
+        id: cpu-threads
+        run: |
+          THREADS=$(nproc)
+          if ! [[ "$THREADS" =~ ^[0-9]+$ ]]; then
+            THREADS=4
+          fi
+          echo "THREADS=$THREADS" >> $GITHUB_ENV
+          echo "Using $THREADS CPU threads"
+      
       # Add support for more platforms with QEMU (optional)
       # https://github.com/docker/setup-qemu-action
       - name: Set up QEMU
@@ -77,7 +89,11 @@ jobs:
           context: .
           file: ./Dockerfile
           push: ${{ github.event_name != 'pull_request' }}
+          # tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ env.TAG }} , ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+          # tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ steps.meta.outputs.tags }} , ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
           tags: ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:${{ github.ref_name }} , ${{ env.REGISTRY }}/${{ env.IMAGE_NAME }}:latest
+          build-args: |
+            THREADS=${{ env.THREADS }}
           cache-from: type=gha
           cache-to: type=gha,mode=max
           # TODO: Improve pipeline with https://docs.docker.com/build/ci/github-actions/multi-platform/
